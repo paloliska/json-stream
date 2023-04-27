@@ -1,17 +1,14 @@
 package bug.liska;
 
-import java.time.Duration;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-import javax.xml.crypto.Data;
+import io.smallrye.mutiny.Multi;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
 import org.jboss.resteasy.reactive.RestStreamElementType;
 import org.jboss.resteasy.reactive.common.util.RestMediaType;
 
-import io.smallrye.mutiny.Multi;
-import io.smallrye.mutiny.infrastructure.Infrastructure;
-import io.smallrye.mutiny.subscription.FixedDemandPacer;
+import java.time.Duration;
 
 @Path("/hello")
 public class GreetingResource {
